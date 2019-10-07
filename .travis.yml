@@ -1,43 +1,39 @@
 language: go
-
 go:
-  - '1.12'
-
+- '1.12'
 before_script:
-  - sudo sysctl -w net.ipv4.ip_forward=1
-
+- sudo sysctl -w net.ipv4.ip_forward=1
 services:
-  - docker
-
+- docker
 env:
   global:
-    - GO111MODULE=on
-    - CGO_ENABLED=0
-    - GO_VERSION=1.12
-    - secure: "VNMhL0rwbAaiTV3YrERYSN57/EsMbtp6QET0cN0O4LSWlt0SRDBIeKXnL+Ex3Q7BMY+++DPovW4jZcIVnKyKvH5oGCgJ9Ilj6/Vk9GRKuyu5X+XQi4CuY9f70fz5gCb5ESpeLP9LD12Q6tsNrfRVO+zJiqyvjkZJYZAeTOZmL8szoJIDK83foRmVvwGdTQEK6Pq5fnaNXePcDqgywApDu9QMrab6HcoxZ/TZ99sJP7OEZTQIitdjfTQkol8bx34KT9NUvtd1nvMdcXAWaKyraFr4hJJEYIyB9b3rTtHemKQUhaQm3lrvuy0ns8wqNVyGV9u9qSPdtrL0rqdllw3xm3s5Azg7F+cnVBLyUebG/t5QpAipPeknkRKaicbAyjEZJUIrSLyVma1KQo82btmX/CeFlfS2tyNq9OtOfHouYxdrry8FtMH2DlUkFjHpry5E+FYBldUYDh6HGLYpXuk5JJkx5Td3DL2cqJHpYi6OjcENNESsFkg2ONGW6X3fu7khIkpBrnLMeWwGKlnwn2SVuvcfB/mBKK93Rknm2RdJGEYuOazidRjxRvl9y1oEwerx0SaQH5/uI/QwPN0ksVEiXVXD/C/Djp6nBptxnJdXPBl5gqZsSQ2Qd9JVN2B1oXb1wgHBcIO8ikmuKG8/32IJpFeOCSnkYVEjKSVqQ1MtQhs="
+  - GO111MODULE=on
+  - CGO_ENABLED=0
+  - GO_VERSION=1.12
+  - secure: MQi1FzYAh0wlRVlTORQA7EyQlTLUqYUkovh+LKjMqcHlpk9EqLgg8A+kpPgM/Ngsy1Q94kImwaKTjqCcPF15k+R3++FoNYKhbLYjH1SfO+4DfHv8Dtq/VuAVTbRc7FqURcG8QaAeStpKIFOMAAo6h3OXN3cXBxk7bHn+8l1s+33IYq598VlRjld3tG+kAM+SnKcbl4jal39eR22VxkXKH9bFp+37CjoHF7/IaIniVO16ZQXR/7X9WciDYE22tOvWxHTtL5HR4FSPTYEbc3He8B9gg6qxmwlHSmXjwx1nyFE3vZtQzxZHlAEBPdlVXPHcAUB8NjyxJfOwHNiu29NEmfs9uv0vQLQR2i0UPpe6I1MSDWG3etqfCUPAfirs01zuxDe5sALe1UlngtI8IntHIUGmIpKRgNp0H0Ue+7LgeclqR6+4vkkrdGYv9km4boFdARyCZJt6TwQSpp8BpQ/bPLevnW5Ad90eHQeklv6Q+jC1OI7xFURCYznHlrYPFUTq67Mk+js/Mr3NX0skkS8EYA0F9GqDtYDId8ADHA+pzzatbPdCNcfeR0ywHCc1SLIcAlxfttXsv1dd2FSB7wClRH4RHrkWD1Jq50Ag6eSHrG45ZKKh+1m5ZLjnNHt9Xncy/WfM0n15EEBcWh9+wjptT5XJvCIuHjwe/huYvxL/iw0=
+  - secure: CiNym/ism/CWAel5TtzlB1lMesdIkh5E0BVor1I2iF4Jte8X82mNPwvmxPNy1nhFrYI/WWb0L6PIhL+zonX5XlA7IdmK8jqGdy6b+MKicD38qqs8z7K2cfcq00/iJGnIpQxGbWvLofywgSIEPPxd4WhDnWcuBm5q2G4MlNLHBz/EQwIFtWYy9+18dpuY3DDJAoyqEDl/bxFyS1da4V+hqMUBk5ZvxQ9BuN2nedU894Lba4HdGC1hrXaeTCgyvFtBigQSzCfg3B9Y8Xjw9E+CNRlJQgp8DvRYWysY12+4UWna/Pee68ono2kCikbV/psSoFZUbXjYhR0sVrwl6w73HA/fHocBKwPZpxUd5i8FzsSnewZWRjyqaXtmpVnfk4bq5d2IqRkS5ojyNMynuWDfi/i06bbsQ9tkBU2fDP1BCjpMeuPo1FZKmDVs9Xh/blDrknINYxLAuAU121JkXDS7Sfq9TBRhSM7gQdy4XJxRBSzyiyhuahuMaRi+vNEBDe/aBsBdStEgwa7Za/p3lUtRKAEtPwkE0TPks1I3/Mw+4f/HI8/KKbme9WtB914qmk9oyroge65D3Ks/XGIs6nTJP138efUloVr+G22MvcWTv2ZnYVp/dcsaLobBJw/0n7xXOM3RsvCT/jL1f+M935iwWw280cz9mJY8iyChXfwKipo=
+  - secure: QR886hiM0LXBbqWA6V9djPVL0KnN8IEk2QZ4Lg3TGpwsvQ/wFIj562uub4rfzwThfonp9spSD72xV9Z8Zt2gnCTffsMKa5xWsercGHDBJbrRk7dqH4Ci1MQ69rRXGAnONUC0YmDH7ILkMpZuoxG/6zc7yW/POXaBFDSS3KbhbDiAaDlqcrUfhZ9Ywgko8OMpEfpe60eSGEJawpH1QqRE8tmtpDC1rc3EURTuCGWX6hN805VApbhSLLa2RcoHDBC9csT7WEtt7BbVAabos1O1pPsKZei/m4sypo+TGBtogWWkIKvKYtwIyrtdtbRuWf2LBabhQmqZOtTv1kAmOi3Y3BZ9zAgsIpKzTk9kfdmvbEJy52ua974kJQoHcPADj45fHaEKcrQCgTWVdQ/Lxq2Nw6zt3eBUmYVfTcGI903Pn1Ylg3BInyPbeymqdD0/xCmfiIIO7TXxzD96rpj4+2cCngg+Ul/CbwGswqB8L+aQlyVnxDsTRoizT6BwHT6hxUnGq6cJmh/8NUy6eGwCuvIr+gYekx7EzG/M/CUro15H5v7Ow2e7yYeltASmzG7a+87Fic+ZQkwZRbIYPpeWQAF8oDTvZFh8J1UU3dZHbrpWATyRrICMPJ46yuCPNPF+8/NlQl/nW9AmkgC8lkdpq97MSG+2cC0W/UHgYQ4OQH56w6k=
 script:
-  - curl -sL https://git.io/goreleaser | bash -s -- --snapshot --skip-publish --rm-dist
-
+- curl -sL https://git.io/goreleaser | bash -s -- --snapshot --skip-publish --rm-dist
 before_deploy:
-  - if [[ -n "${DOCKER_LOGIN_USERNAME}" ]] && [[ -n "${DOCKER_LOGIN_PASSWORD}" ]] && [[ -n "${DOCKER_LOGIN_URL}" ]]; then docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" "${DOCKER_LOGIN_URL}"; fi
-  - export FULL_IMAGE="${DOCKER_LOGIN_URL}/mittwald/kubernetes-replicator"
+- if [[ -n "${DOCKER_LOGIN_USERNAME}" ]] && [[ -n "${DOCKER_LOGIN_PASSWORD}" ]] &&
+  [[ -n "${DOCKER_LOGIN_URL}" ]]; then docker login -u "${DOCKER_LOGIN_USERNAME}"
+  -p "${DOCKER_LOGIN_PASSWORD}" "${DOCKER_LOGIN_URL}"; fi
+- export FULL_IMAGE="${DOCKER_LOGIN_URL}/kubernetes-replicator"
 deploy:
-  - provider: script
-    skip_cleanup: true
-    script: >-
-      curl -sL https://git.io/goreleaser | bash -s -- --snapshot --skip-publish --rm-dist &&
-      docker push "${FULL_IMAGE}:latest" &&
-      docker push "${FULL_IMAGE}-arm64:latest" &&
-      docker push "${FULL_IMAGE}-armv5:latest" &&
-      docker push "${FULL_IMAGE}-armv6:latest" &&
-      docker push "${FULL_IMAGE}-armv7:latest"
-    on:
-      tags: false
-      branch: master
-      condition: $TRAVIS_OS_NAME = linux
-  - provider: script
-    skip_cleanup: true
-    script: curl -sL https://git.io/goreleaser | bash -s -- --rm-dist
-    on:
-      tags: true
-      condition: $TRAVIS_OS_NAME = linux
+- provider: script
+  skip_cleanup: true
+  script: curl -sL https://git.io/goreleaser | bash -s -- --snapshot --skip-publish
+    --rm-dist && docker push "${FULL_IMAGE}:latest" && docker push "${FULL_IMAGE}-arm64:latest"
+    && docker push "${FULL_IMAGE}-armv5:latest" && docker push "${FULL_IMAGE}-armv6:latest"
+    && docker push "${FULL_IMAGE}-armv7:latest"
+  on:
+    tags: false
+    branch: master
+    condition: "$TRAVIS_OS_NAME = linux"
+- provider: script
+  skip_cleanup: true
+  script: curl -sL https://git.io/goreleaser | bash -s -- --rm-dist
+  on:
+    tags: true
+    condition: "$TRAVIS_OS_NAME = linux"
