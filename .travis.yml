@@ -16,7 +16,7 @@ env:
 script:
 - curl -sL https://git.io/goreleaser | bash -s -- --snapshot --skip-publish --rm-dist
 before_deploy:
-- if [[ -n "${DOCKER_LOGIN_USERNAME}" ]] && [[ -n "${DOCKER_LOGIN_PASSWORD}"; then echo "${DOCKER_LOGIN_PASSWORD}" | docker login -u "${DOCKER_LOGIN_USERNAME}" --password-stdin; fi
+- if [[ -n "${DOCKER_LOGIN_USERNAME}" ]] && [[ -n "${DOCKER_LOGIN_PASSWORD}" ]]; then echo "${DOCKER_LOGIN_PASSWORD}" | docker login -u "${DOCKER_LOGIN_USERNAME}" --password-stdin; fi
 - export FULL_IMAGE="${DOCKER_LOGIN_USERNAME}/kubernetes-replicator"
 deploy:
 - provider: script
