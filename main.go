@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/seniorfoffo/kubernetes-replicator/liveness"
-	"github.com/seniorfoffo/kubernetes-replicator/replicate"
+	"github.com/mittwald/kubernetes-replicator/liveness"
+	"github.com/mittwald/kubernetes-replicator/replicate"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
@@ -20,7 +20,7 @@ func init() {
 	flag.StringVar(&f.Kubeconfig, "kubeconfig", "", "path to Kubernetes config file")
 	flag.StringVar(&f.ResyncPeriodS, "resync-period", "30m", "resynchronization period")
 	flag.StringVar(&f.StatusAddr, "status-addr", ":9102", "listen address for status and monitoring server")
-	flag.StringVar(&f.LogLevel, "loglevel", "Info", "loglevel")
+	flag.StringVar(&f.LogLevel, "loglevel", "info", "loglevel")
 	flag.BoolVar(&f.AllowAll, "allow-all", false, "allow replication of all secrets (CAUTION: only use when you know what you're doing)")
 	flag.Parse()
 
@@ -34,19 +34,10 @@ func main() {
 	var config *rest.Config
 	var err error
 	var client kubernetes.Interface
-	var loglevels map
+	var loglvl log.Level
 
-	loglevels := {
-		"Trace": log.TraceLevel,
-		"Debug": log.Debuglevel,
-		"Info":  log.InfoLevel,
-		"Warn":  log.WarnLevel,
-		"Error": log.ErrorLevel,
-		"Fatal": log.FatalLevel,
-		"Panic": log.PanicLevel,
-	}
-
-	log.SetLevel(loglevels[f.LogLevel])
+	loglvl, _ = log.ParseLevel(f.LogLevel)
+	log.SetLevel(loglvl)
 
 	if f.Kubeconfig == "" {
 		log.WithFields(log.Fields{
@@ -82,7 +73,7 @@ func main() {
 	}
 
 	log.WithFields(log.Fields{
-		"statusAddr": f.statusAddr,
+		"statusAddr": f.StatusAddr,
 	}).Info("starting liveness monitor")
 
 	http.Handle("/healthz", &h)
