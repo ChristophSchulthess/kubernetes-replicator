@@ -15,8 +15,6 @@ env:
 script:
 - curl -sL https://git.io/goreleaser | bash -s -- --snapshot --skip-publish --rm-dist
 before_deploy:
-- openssl aes-256-cbc -K $encrypted_ebbb1a980a9d_key -iv $encrypted_ebbb1a980a9d_iv
-  -in key.json.enc -out ~\/.gcp/key.json -d
 - export FULL_IMAGE="zetoph/kubernetes-replicator"
 deploy:
 - provider: script
