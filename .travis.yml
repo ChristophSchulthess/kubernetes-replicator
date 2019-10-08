@@ -10,18 +10,21 @@ env:
   - GO111MODULE=on
   - CGO_ENABLED=0
   - GO_VERSION=1.12
-  - secure: "BVX1kOzYuscuV8VQIOGWV02lXmEhzX0uoXUgb1XuGIwPkYAPqyw92bWA8QSBp6HAvkONQ4j+WZ7RzByF5cDQfVlB9PmqrLJjiajE0jEmKNEloSozz7piov85r+EaiqLscScEd0NmHquvFsg/deLE/G+l3vb7mXJ8eSqgh+yLVYdkHiwqtXwbIL7o/S2IL5OORPOaFbcvGx49mkCaJgBnn58OkGy0G3MClz0Oday4yyUF/+6QGZMDWTrwhMdJn4AcLW1zgN73lGwIBo1X+i75XvPwkofNlH77QxxOAyVVqvi1gJYf5Vinm7LaaiiICXiszXrkSt3RihdzeL7nAcGGPvKOPVjqI7fCVY8KX2IEnn68Wm37MM4itOOFg02q3qrBlp8GeXmPc1oTJIAFqT3oUgdyr3eCQ0RWthwSkN8BwXefySJDq/y+wusTiJDT6MRmtA+H8nmKhTLQxjPg1jcuilzWOudUsY7BRrvtBPcAl6fsokYKXqV+WcruwKFoYdrhHf5yheCKcYDMaxb3UeD/QV/n8tf5OElc30w6NISQxWAyAJwLpwB5Xi6REAPGhFkS+AP9wrpGv6hiDXSjB3pO3dEQDJU5zMWMBdd9X19+GA9Dm/uqUEDTb70nErNkTtH78eN86CrBdCdqsFmiuJ3TqcF/0H0bsDCwuTa3ZNbD8/Q="
-  - secure: "BBuVkC0wTsqbc0x4quBDy9MJO6flRNRlFjlDiJTZft9vJk/Pu6luQ+y7QQmnEqbW70ghuZIc3EE+yWRVzfS8T994lszGrxIg7sgNwXniJI8ertI130gJpJAU7XG0mBOMZ/Kv2bfSdr6G68/MN1ddpo6IqOOF437ZP+5TRnTvT2ACKNBQJ3V4rINCKQ3uKpOinUH/MYjJmILY0tke1n7bPp9a4Vm5XGjynhhlw0c5h6pBXSTih6wO13DOdJtf92F3CQI/CmPd/ecOXABBA0wbX2PNoGGiaXHHPHaupZ/UnfWDjQKVhxpTte76VV3lMbnUkHkqLcEIm2kIww2HXuya+mMOc3S7sadAxC8Regqm0qSA1l4GUT9ddbwkl8Dz4tIUeSehXsfZL1pBqOygfuMS93zTsAxhKvJLZO93Qlzkl9RpX3T0oh2N1eJGM7+yD40NDnBsiMcwC6tik9yAViMPtyKugYJmXNcr8Fd3DkMsYGsA0+nC1EfWvGdKgilX1z/KR1eri1GhV9eqSkf1A8EPCFwKDH3SPE7u9QpuQaWy6ssbWs/xfnh/TX4jfSRioxedomNoDa087noSPtrO5LrWWCq6fHEfssV8EMPFirW2aIMc7CsynIS9DP14k47TMG8kkvx4SqXZkK8vxuxbybqhWmIvwPW6u111trsnqxLx4GA="
+  - secure: "O86y57aON/KrDcQc7SQOshWwDq0CcTbfYxPS885Q46ajqSK17r0I8VZHwIDzyMrIJfR+oefyI91sUWyZXOcTmm+XQi2frbe5FnWjuvh3mkuhVKRk9anlYa11dzZ37Po5rYgfDkaD4NHi4gc1sjS+TJbmVsQnDqK7b8aXfSZgNfkWWB+j39l/5imYSmy/0lIdjrJzUqZZT1Pa7Vxtevq1NXILiD6pS6yNFWrdbUxm8PRDrPnM1V0O9VbFDGrHbZuIrB7sgkNDKVmn5dNaQM9mfDebEi7E0nXGOrhrti4aR1ie1vMucPaXKjdK9oQ53yvUS7MGAX36NLg9y0USxPjqufekepyACGRuophzvaAfaASLU4Du4NO4bjyPBPtN0TX9yBKqL2yyUY00A2G4rjTTh3GJWNPJdXwow2PdsM3Di+Rf9FXirQg4/esFAUyQcS0MvJbE1TEotO3HYKdl+eGS/jLR/+9OV0kvLC0u+mZOr/H36ChaR/x/bCxEo/EphVYhoSJ+gnV6pKgpjd1/37WPQQ1FTk74PTHdu9u1ikq/azWRFzH9+vtSxK5ZWZyd6DWoMP3FXo1AFtGSZxGt7ZnU56zhk0qazuaw3vU/R5eS5ickgeTF8NkJ5BppBMJ4nsLNFxOblyrS6M3xFjduD6SNLmHOalb1R5CsIeNkOXwQ1/8="
+  - secure: "YGOptbKGI/V9ckPD9um2uUjoBAqVtiLBY672UBnsGWsrxrPtDPX+saTSSprDyz54pfeGbs7kQl/cpyImu2qOWKecFNIQA3+uUtZkBgkMVpGkckql/U09UKPqeVnyyDhv/4cF6EHmF/iKnKpQuU2iHXP7w6VbwxMLCioS0I4DjjtVVA4rlMl/99tZy7idYDFOMzznab0U9EdkoxU1GMMUGcXWE7ZN+kYV62ytsXykwsQRDU0xijuSuXPHigJgN8lPq0qU0JMeZnlyUWd08eYzOJvhTF/0RhJ5PYt20QY2uKhyYZV5LmDLVyFaBN9MFn56Bphds33L2Z7G1ukR40UWqc4ZgQgE1LH9aYyAkKkJlzZd5BnFcFNv909Dn2ZvXKxJ7xgC5js6Wof7ZtDCXitwuTZwd8RQgUce8SgFncKOzuBU5PdmnPKe8xPPChdo48pCeqnExNM3KCjTIZ8HMRU+1cfy00EFW7ZPBkZu9k7t1syXIGEjnIj4YCJGjUkSKAY4Uj/T2VLuxBemkPQV+HerN97gXV1lo8XpXRTxlOf/i7gXoglTHKTRzZ6peLs0MJrB+1nqnJ7CVUfeGSPy9p8yFET6V//x3qZDz6M+Zu+aw0ooCtE/i9GbXSUYZwLhQ6t8n+BaQvnDacomieRm/0wUjmcYu4Nl1lq3MPNUcaoTtWU="
 script:
 - curl -sL https://git.io/goreleaser | bash -s -- --snapshot --skip-publish --rm-dist
 before_deploy:
-- if [[ -n "${DOCKER_LOGIN_USERNAME}" ]] && [[ -n "${DOCKER_LOGIN_PASSWORD}" ]]; then echo "${DOCKER_LOGIN_PASSWORD}" | docker login -u "${DOCKER_LOGIN_USERNAME}" --password-stdin; fi
-- export FULL_IMAGE="${DOCKER_LOGIN_USERNAME}/kubernetes-replicator"
+- openssl aes-256-cbc -K $encrypted_ebbb1a980a9d_key -iv $encrypted_ebbb1a980a9d_iv
+  -in key.json.enc -out ~\/.gcp/key.json -d
+- export FULL_IMAGE="zetoph/kubernetes-replicator"
 deploy:
 - provider: script
   skip_cleanup: true
-  script: curl -sL https://git.io/goreleaser | bash -s -- --snapshot --skip-publish
-    --rm-dist && docker push "${FULL_IMAGE}:latest" && docker push "${FULL_IMAGE}-arm64:latest"
+  script: |
+    curl -sL https://git.io/goreleaser | bash -s -- --snapshot --skip-publish
+    --rm-dist && echo "${DOCKER_LOGIN_PASSWORD}" | docker login -u "${DOCKER_LOGIN_USERNAME}" --password-stdin
+    && docker push "${FULL_IMAGE}:latest" && docker push "${FULL_IMAGE}-arm64:latest"
     && docker push "${FULL_IMAGE}-armv5:latest" && docker push "${FULL_IMAGE}-armv6:latest"
     && docker push "${FULL_IMAGE}-armv7:latest"
   on:
